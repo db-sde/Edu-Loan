@@ -1,0 +1,15 @@
+/* Widget build: import Tailwind without the global "preflight" reset.
+   Preflight resets element defaults (h1-h6, buttons, etc.) document-wide,
+   which would clobber the host WordPress theme's styling outside our
+   container. Utilities/theme are still included so all component
+   classNames render correctly. */
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#db-education-loan-calculator {
+  font-family: var(--font-sans);
+}
