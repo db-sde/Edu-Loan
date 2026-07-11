@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Calculator, RefreshCw, MessageCircle, Info } from 'lucide-react';
+import logo from './assets/logo.jpg';
 
 export default function App() {
   const [loanAmount, setLoanAmount] = useState('200000');
@@ -74,7 +75,7 @@ export default function App() {
       {/* Header */}
       <header className="bg-white h-20 shadow-sm flex items-center justify-between px-6 md:px-12 w-full z-10 sticky top-0">
         <div className="flex items-center gap-2">
-          <img src={`${import.meta.env.BASE_URL}DB_logo-1.png`} alt="DegreeBaba Logo" className="h-10 w-auto" />
+          <img src={logo} alt="DegreeBaba Logo" className="h-10 w-auto" />
         </div>
         <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all hover:scale-105">
           Education Loan Calculator
