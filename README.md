@@ -1,32 +1,65 @@
-# React + TypeScript + Vite
+# Education Loan EMI Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive Education Loan EMI Calculator web application built with React, TypeScript, and Vite. Designed for "DegreeBaba", this application helps users seamlessly calculate their monthly EMI, total interest payable, and overall repayment amount for education loans.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Interactive EMI Calculator**: Input loan amount, interest rate, and tenure (in months or years) to get real-time EMI calculations.
+- **Detailed Repayment Summary**: View monthly EMI, total interest, and total amount payable.
+- **Bank Rates Comparison**: A comprehensive table showing current indicative interest rates across top Indian banks (SBI, HDFC, ICICI, etc.).
+- **Educational Content**: Includes information on how EMI is calculated, the moratorium period, and tips for managing education loans.
+- **Responsive Design**: Built with Tailwind CSS to ensure a seamless experience across desktop and mobile devices.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19, TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS v4
+- **Icons**: Lucide React
+- **Linting**: Oxlint
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+### Prerequisites
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development Server
+
+Run the local development server:
+
+```bash
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open `http://localhost:5173` to view the application in your browser.
+
+### Building for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+The built assets will be available in the `dist` directory.
+
+## Project Structure
+
+- `src/App.tsx`: Main application component containing the calculator logic and UI.
+- `src/index.css`: Global styles and Tailwind configuration.
+- `vite.config.ts`: Vite configuration file.
+- `package.json`: Project dependencies and scripts.
+
+## License
+
+This project is licensed under the MIT License.
